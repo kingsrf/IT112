@@ -1,0 +1,47 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Flask / SQLAlchemy ---
+instance/
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.log
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+.env/
+.env.*
+*.egg-info/
+*.egg
+
+# --- Testing Caches ---
+.mypy_cache/
+.pytest_cache/
+.tox/
+.coverage
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# --- Web Assets Cache ---
+.webassets-cache
+
+# --- Local/IDE-specific ---
+*.local
+*.local.*
+
+# --- NodeJS ---
+node_modules/
+
+# --- VSCode Settings ---
+.vscode/
