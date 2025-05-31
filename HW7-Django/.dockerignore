@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS files
+.DS_Store
+
+# SQLite database
+*.db
+*.sqlite
+*.sqlite3
+
+# Virtual environments
+venv/
+.venv/
+
+# Git
+.git
+.gitignore
+
+# IDE / editor settings
+.vscode/
+.idea/
+
+# Env files
+.env
+.env.*
+
+# Docker override (if used)
+docker-compose.override.yml
