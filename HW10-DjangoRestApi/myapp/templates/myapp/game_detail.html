@@ -1,0 +1,18 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ game.title }} - Details</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>{{ game.title }}</h1>
+    <p><strong>Genre:</strong> {{ game.genre }}</p>
+    <p><strong>Platform:</strong> {{ game.platform }}</p>
+    <p><strong>Released:</strong> {{ game.release_year }}</p>
+    <br>
+    <a class="button-link" href="{% url 'game_list' %}">🔙 Back to All Games</a>
+</body>
+</html>

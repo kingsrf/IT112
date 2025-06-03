@@ -1,0 +1,25 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Games</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>🎮 Game Library</h1>
+    <ul style="list-style: none; padding: 0;">
+        {% for game in games %}
+            <li>
+                <a class="button-link" href="{% url 'game_detail' game.id %}">
+                    {{ game.title }} ({{ game.platform }})
+                </a>
+            </li>
+        {% empty %}
+            <li>No games in the library.</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
