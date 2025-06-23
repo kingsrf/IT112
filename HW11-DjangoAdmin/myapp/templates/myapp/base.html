@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>King's Django App</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    {% if user_name %}
+        <h1>Welcome, {{ user_name }}! 👋</h1>
+    {% else %}
+        <h1>Welcome to King's Django App! 👑</h1>
+    {% endif %}
+
+    <img src="{% static 'images/neo.jpg' %}" alt="Home Image">
+    <div class="button-container">
+        <a class="button-link" href="{% url 'game_list' %}">▶ View All Games</a>
+    </div>
+</body>
+</html>
